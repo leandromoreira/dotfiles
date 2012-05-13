@@ -7,6 +7,7 @@ sudo apt-get install ack-grep xclip curl build-essential openssl libreadline6 li
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 rvm reload 
+rvm pkg install zlib
 rvm install 1.9.3
 rvm reload
 rvm use 1.9.3
