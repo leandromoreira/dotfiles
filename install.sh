@@ -1,6 +1,16 @@
+#!/bin/bash
 #make symbolic links for .files and folders
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.vim ~/.vim
+
+if [ ! -f ~/.vimrc ];
+then
+  ln -s ~/dotfiles/.vimrc ~/.vimrc
+fi
+
+if [ ! -d ~/.vim ];
+then
+  ln -s ~/dotfiles/.vim ~/.vim
+fi
+
 
 #config git for me
 git config --global alias.st status
