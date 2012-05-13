@@ -1,3 +1,5 @@
 .vim/backup/*
 .vim/tmp/*
+.vim/.vim/*
+.vim/.vim
 
