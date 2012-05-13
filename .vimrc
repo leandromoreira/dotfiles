@@ -1,5 +1,6 @@
 set nocompatible 
 syntax on 
+let mapleader=","
 filetype plugin indent on 
 set backspace=indent,eol,start 
 set backup 
