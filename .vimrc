@@ -23,3 +23,6 @@ set smartcase
 set shiftwidth=2 
 set softtabstop=2 
 colorscheme desert
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
