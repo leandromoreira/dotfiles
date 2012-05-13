@@ -1,5 +1,5 @@
 set nocompatible 
-syntax on " syntax highlighting on
+syntax on 
 filetype plugin indent on 
 set backspace=indent,eol,start 
 set backup 
