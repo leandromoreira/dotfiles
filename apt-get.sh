@@ -10,6 +10,7 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-jdk7-installer
 sudo apt-get install rhino
+sudo apt-get install nodejs
 
 if [ ! -d ~/.bin ];
 then
