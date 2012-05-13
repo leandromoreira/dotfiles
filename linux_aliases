@@ -1,0 +1,6 @@
+alias df='df -h'
+alias ..='cd ..'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias gs='git status'
+
