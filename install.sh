@@ -11,7 +11,13 @@ then
   ln -s ~/dotfiles/.vim ~/.vim
 fi
 
+if [ ! -d ~/bin ];
+then
+  mkdir ~/bin
+fi
 
+cp -r ~/dotfiles/bin/ ~/bin
+  
 #config git for me
 git config --global alias.st status
 git config --global alias.l log
