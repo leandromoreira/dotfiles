@@ -17,7 +17,8 @@ then
 fi
 
 cp -r ~/dotfiles/bin/ ~/bin
-  
+export PATH=$PATH:"~/bin/"
+
 #config git for me
 git config --global alias.st status
 git config --global alias.l log
