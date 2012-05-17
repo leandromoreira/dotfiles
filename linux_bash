@@ -3,6 +3,6 @@ source ~/dotfiles/linux_aliases
 take()
 {
   mkdir $1
-  cd $2
+  cd $1
 }
 
