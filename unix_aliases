@@ -4,6 +4,7 @@ alias tree='tree | less'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 alias gs='git status'
+alias gl="git log --oneline"
 alias pull='git pull'
 alias push='git push'
 
