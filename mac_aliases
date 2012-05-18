@@ -1,0 +1,4 @@
+alias vim="mvim"
+alias install='brew install'
+alias remove='brew remove'
+

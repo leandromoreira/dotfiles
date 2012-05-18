@@ -1,1 +1,2 @@
-brew git
+brew install git
+brew install macvim

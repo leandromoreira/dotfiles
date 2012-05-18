@@ -1,0 +1,10 @@
+alias df='df -h'
+alias ..='cd ..'
+alias gs='git status'
+alias gl="git log --oneline"
+alias pull='git pull'
+alias push='git push'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
