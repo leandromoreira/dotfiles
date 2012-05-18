@@ -1,0 +1,16 @@
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	l = log
+[user]
+	name = Leandro Moreira
+	email = leandro.ribeiro.moreira@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = vim
