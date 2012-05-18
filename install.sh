@@ -1,5 +1,4 @@
-#!/bin/bash
-#make symbolic links for .files and folders
+!/bin/bash
 
 if [ ! -f ~/.vimrc ];
 then
@@ -24,4 +23,12 @@ else
 fi
 
 export PATH=$PATH:"~/bin/"
+
+if [ ! -f ~/.bash_profile ];
+then
+  touch ~/.bash_profile
+fi
+
+echo "source ~/dotfiles/linux_bash" >> ~/.bash_profile
+source ~/.bash_profile
 
