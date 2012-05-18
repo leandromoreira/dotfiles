@@ -13,10 +13,11 @@ fi
 
 if [ ! -d ~/bin ];
 then
-  mkdir ~/bin
+  ln -s ~/dotfiles/bin/ ~/bin
+else
+  cp -r ~/dotfiles/bin/ ~/bin
 fi
 
-cp -r ~/dotfiles/bin/ ~/bin
 export PATH=$PATH:"~/bin/"
 
 #config git for me
