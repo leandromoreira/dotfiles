@@ -1,5 +1,3 @@
-!/bin/bash
-
 if [ ! -f ~/.vimrc ];
 then
   ln -s ~/dotfiles/.vimrc ~/.vimrc
