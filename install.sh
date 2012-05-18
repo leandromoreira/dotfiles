@@ -29,6 +29,6 @@ then
   touch ~/.bash_profile
 fi
 
-echo "source ~/dotfiles/linux_bash" >> ~/.bash_profile
+echo "source ~/dotfiles/unix_bash" >> ~/.bash_profile
 source ~/.bash_profile
 
