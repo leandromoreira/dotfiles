@@ -1,11 +1,7 @@
+#vim config file
 if [ ! -f ~/.vimrc ];
 then
   ln -s ~/dotfiles/.vimrc ~/.vimrc
-fi
-
-if [ ! -f ~/.gitconfig ];
-then
-  ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 fi
 
 if [ ! -d ~/.vim ];
@@ -15,6 +11,13 @@ then
   mkdir ~/dotfiles/.vim/backup
 fi
 
+#git config file
+if [ ! -f ~/.gitconfig ];
+then
+  ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+fi
+
+#general bin
 if [ ! -d ~/bin ];
 then
   ln -s ~/dotfiles/bin/ ~/bin
@@ -24,11 +27,12 @@ fi
 
 export PATH=$PATH:"~/bin/"
 
+#linking my aliases, configs, functions to my bash_profile
 if [ ! -f ~/.bash_profile ];
 then
   touch ~/.bash_profile
 fi
 
-echo "source ~/dotfiles/unix_bash" >> ~/.bash_profile
-source ~/.bash_profile
+echo "source ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
+. ~/.bash_profile
 
