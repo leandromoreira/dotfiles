@@ -7,7 +7,16 @@ fi
 if [ ! -d ~/.vim ];
 then
   ln -s ~/dotfiles/.vim ~/.vim
+  mkdir ~/dotfiles/.vim/backup
+fi
+
+if [ ! -d ~/dotfiles/.vim/tmp ];
+then
   mkdir ~/dotfiles/.vim/tmp
+fi
+
+if [ ! -d ~/dotfiles/.vim/backup ];
+then
   mkdir ~/dotfiles/.vim/backup
 fi
 
@@ -16,6 +25,10 @@ if [ ! -f ~/.gitconfig ];
 then
   ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 fi
+
+#git update submodules
+git submodule init
+git submodule update
 
 #general bin
 if [ ! -d ~/bin ];
@@ -35,4 +48,9 @@ fi
 
 echo "source ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
 . ~/.bash_profile
+
+#change shell prompt to show git info
+. dev-bash-git-ps1/bash_git_ps1.sh
+
+echo '#now remember to install command t'
 

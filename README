@@ -1,3 +1,6 @@
 My config files for unix env.
 
 Until now I have only tested it on ubuntu 12.04
+
+Make sure you have:
+  * Ruby, bundler and rake (gem install)
