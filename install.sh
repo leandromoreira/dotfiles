@@ -46,7 +46,7 @@ then
   touch ~/.bash_profile
 fi
 
-echo "source ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
+echo ". ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
 . ~/.bash_profile
 
 #change shell prompt to show git info
