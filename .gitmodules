@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "dev-bash-git-ps1"]
+	path = dev-bash-git-ps1
+	url = https://github.com/xtrementl/dev-bash-git-ps1.git

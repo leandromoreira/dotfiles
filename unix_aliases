@@ -1,3 +1,4 @@
+. ~/dotfiles/common_aliases
 alias tree='tree | less'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'

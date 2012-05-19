@@ -1,4 +1,4 @@
-source ~/dotfiles/unix_aliases
+. ~/dotfiles/unix_aliases
 
 take()
 {
