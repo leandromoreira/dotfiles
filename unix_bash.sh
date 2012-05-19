@@ -9,10 +9,15 @@ fi
 
 . ~/dotfiles/common_aliases
 
+#change shell prompt to show git info
+. ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
+
 take()
 {
   mkdir $1
   cd $1
 }
 
+#random quote
+fortune
 

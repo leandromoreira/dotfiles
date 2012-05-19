@@ -49,8 +49,5 @@ fi
 echo ". ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
 . ~/.bash_profile
 
-#change shell prompt to show git info
-. dev-bash-git-ps1/bash_git_ps1.sh
-
 echo '#now remember to install command t'
 
