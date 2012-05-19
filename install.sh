@@ -32,4 +32,3 @@ fi
 echo "source ~/dotfiles/unix_bash" >> ~/.bash_profile
 source ~/.bash_profile
 
-

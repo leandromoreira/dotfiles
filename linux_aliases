@@ -1,4 +1,3 @@
-. ~/dotfiles/common_aliases
 alias tree='tree | less'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
@@ -10,5 +9,5 @@ if [ -x /usr/bin/dircolors ]; then
   alias egrep='egrep --color=auto'
 fi
 
-alias ack-gre='ack-grep -a'
+alias ack-grep='ack-grep -a'
 

@@ -1,4 +1,12 @@
-. ~/dotfiles/unix_aliases
+os=`uname`
+
+if [[ "$os" == 'Linux' ]]; then
+  . ~/dotfiles/linux_aliases
+elif [[ "$os" == 'Darwin' ]]; then
+  . ~/dotfiles/mac_aliases
+fi
+
+. ~/dotfiles/common_aliases
 
 take()
 {
