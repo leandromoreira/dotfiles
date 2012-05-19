@@ -12,13 +12,6 @@ sudo apt-get install oracle-jdk7-installer
 sudo apt-get install rhino
 sudo apt-get install nodejs
 
-if [ ! -d ~/.bin ];
-then
-  mkdir ~/.bin && cd ~/.bin
-else
-  cd ~/.bin
-fi
-
 #installing rvm
 curl -L get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
