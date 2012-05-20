@@ -10,3 +10,6 @@
 [submodule "dev-bash-git-ps1"]
 	path = dev-bash-git-ps1
 	url = https://github.com/xtrementl/dev-bash-git-ps1.git
+[submodule ".vim/bundle/VimClojure"]
+	path = .vim/bundle/VimClojure
+	url = git://github.com/vim-scripts/VimClojure.git
