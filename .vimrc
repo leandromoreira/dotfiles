@@ -1,7 +1,6 @@
 set nocompatible 
 syntax on 
 let mapleader=","
-filetype plugin indent on 
 set backspace=indent,eol,start 
 set backup 
 set backupdir=~/.vim/backup 
@@ -23,9 +22,14 @@ set shiftround
 set smartcase 
 set shiftwidth=2 
 set softtabstop=2 
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype plugin indent on 
 colorscheme desert
+
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
 
 if has('mac')
   colorscheme vividchalk
