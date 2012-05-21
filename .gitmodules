@@ -26,3 +26,6 @@
 [submodule ".vim/bundle/html5"]
 	path = .vim/bundle/html5
 	url = https://github.com/othree/html5.vim
+[submodule ".vim/bundle/vim-align"]
+	path = .vim/bundle/vim-align
+	url = https://github.com/tsaleh/vim-align
