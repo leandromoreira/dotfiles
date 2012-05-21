@@ -5,6 +5,12 @@ if [[ "$os" == 'Linux' ]]; then
 elif [[ "$os" == 'Darwin' ]]; then
   . ~/dotfiles/mac_aliases
   export CLICOLOR=1
+  #git completion
+  ln -s "/usr/local/Library/Contributions/brew_bash_completion.sh" "/usr/local/etc/bash_completion.d"
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+
 fi
 
 . ~/dotfiles/common_aliases
