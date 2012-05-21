@@ -28,6 +28,11 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on 
 colorscheme solarized
+set background=dark
+
+if has('mac')
+  set guifont=Monaco:h12  
+endif
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
