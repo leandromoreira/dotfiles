@@ -27,12 +27,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on 
-colorscheme desert
+colorscheme solarized
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
-
-if has('mac')
-  colorscheme vividchalk
-endif
 
