@@ -32,6 +32,8 @@ set background=dark
 
 if has('mac')
   set guifont=Monaco:h12  
+else
+  colorscheme desert
 endif
 
 let g:vimclojure#HighlightBuiltins = 1
