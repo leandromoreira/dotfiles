@@ -1,4 +1,4 @@
-alias vim="mvim"
+alias vim="mvim -v"
 alias install='brew install'
 alias remove='brew remove'
 
