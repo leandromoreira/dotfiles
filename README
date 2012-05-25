@@ -1,6 +1,7 @@
-My config files for unix env.
+My config files for some *unix env.
 
-Until now I have only tested it on ubuntu 12.04
+I have only tested this on ubuntu 12.04 and Mac OS 10.7.4.
 
 Make sure you have:
+  * installed the brew.sh or apt-get.sh first
   * Ruby, bundler and rake (gem install)
