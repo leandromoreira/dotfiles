@@ -1,4 +1,5 @@
 alias vim="mvim -v"
 alias install='brew install'
 alias remove='brew remove'
+alias ack-grep='ack'
 
