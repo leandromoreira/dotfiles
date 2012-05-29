@@ -38,11 +38,6 @@ else
 fi
 
 #linking my aliases, configs, functions to my bash_profile
-if [ ! -f ~/.bash_profile ];
-then
-  touch ~/.bash_profile
-fi
-
 echo ". ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
 . ~/.bash_profile
 
