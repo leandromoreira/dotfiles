@@ -1,3 +1,12 @@
+#install basic toolset
+os=`uname`
+
+if [[ "$os" == 'Linux' ]]; then
+  . ~/dotfiles/apt-get.sh
+elif [[ "$os" == 'Darwin' ]]; then
+  . ~/dotfiles/brew.sh
+fi
+
 #vim config file
 if [ ! -f ~/.vimrc ];
 then
