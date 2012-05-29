@@ -29,6 +29,9 @@ take()
   cd $1
 }
 
+#export
+export PATH=$PATH:"~/bin/"
+
 #random quote
 fortune
 

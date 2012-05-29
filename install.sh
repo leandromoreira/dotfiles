@@ -37,8 +37,6 @@ else
   cp -r ~/dotfiles/bin/ ~/bin
 fi
 
-export PATH=$PATH:"~/bin/"
-
 #linking my aliases, configs, functions to my bash_profile
 if [ ! -f ~/.bash_profile ];
 then
