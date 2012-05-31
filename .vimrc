@@ -30,6 +30,11 @@ filetype plugin indent on
 colorscheme solarized
 set background=dark
 
+"adjust command t cancel
+if ! has('gui_running')
+  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
+endif
+
 if has('mac')
   set guifont=Monaco:h12  
 else
@@ -37,5 +42,5 @@ else
 endif
 
 let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#ParenRainbow      = 1
 
