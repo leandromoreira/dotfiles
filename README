@@ -5,3 +5,9 @@ I have only tested this on ubuntu 12.04 and Mac OS 10.7.4.
 Make sure you have:
   * installed the brew.sh or apt-get.sh first
   * Ruby, bundler and rake (gem install)
+
+TODO
+ remove all the .files and maybe put them on proper folder
+ change logic to .bashrc instead of .bash_profile
+ modify install to backup old config
+ create uninstall to get back the old config
