@@ -16,15 +16,3 @@ sudo apt-get install ncurses-dev automake libtool bison gyp tree htop
 sudo apt-get install rhino
 sudo apt-get install nodejs
 
-#installing rvm
-curl -L get.rvm.io | bash -s stable
-. ~/.rvm/scripts/rvm
-rvm reload 
-rvm pkg install zlib
-rvm install 1.9.3
-rvm reload
-rvm alias create default 1.9.3
-rvm use 1.9.3
-. ~/.rvm/scripts/rvm
-echo ". ~/.rvm/scripts/rvm" >> ~/.bash_profile
-
