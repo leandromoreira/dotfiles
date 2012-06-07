@@ -15,5 +15,6 @@ sudo apt-get install libxml2-dev libxslt-dev autoconf libc6-dev fortune
 sudo apt-get install ncurses-dev automake libtool bison gyp tree htop
 sudo apt-get install rhino
 sudo apt-get install ruby
+sudo apt-get install rubygems
 sudo apt-get install nodejs
 
