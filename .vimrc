@@ -35,6 +35,8 @@ if ! has('gui_running')
   let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
 endif
 
+map <C-t> <Esc>:CommandT<CR>
+
 if has('mac')
   set guifont=Monaco:h12  
 else
