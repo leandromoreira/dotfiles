@@ -37,6 +37,7 @@ endif
 
 map <C-t> <Esc>:CommandT<CR>
 
+set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
 if has('mac')
   set guifont=Monaco:h12  
 else
