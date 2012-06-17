@@ -39,6 +39,7 @@ if ! has('gui_running')
 endif
 
 map <C-t> <Esc>:CommandT<CR>
+map <C-o> <Esc>:TlistToggle<CR>
 
 set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
 if has('mac')
