@@ -41,6 +41,9 @@ endif
 map <C-t> <Esc>:CommandT<CR>
 map <C-o> <Esc>:TlistToggle<CR>
 
+"this makes taglist available for Clojure
+let tlist_clojure_settings = 'lisp;f:function'
+
 set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
 if has('mac')
   set guifont=Monaco:h12  
