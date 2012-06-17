@@ -43,6 +43,8 @@ map <C-o> <Esc>:TlistToggle<CR>
 
 "this makes taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
+"this closes taglist window when you close the last work window
+let Tlist_Exit_OnlyWindow=1
 
 set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
 if has('mac')
