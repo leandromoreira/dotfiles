@@ -14,6 +14,7 @@ set incsearch
 set nohlsearch 
 set number 
 set showcmd 
+set cursorline
 set showmatch 
 set expandtab 
 set ignorecase 
