@@ -56,3 +56,11 @@ endif
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow      = 1
 
+"needed for repl in the same window
+let vimclojure#NailgunClient = "/home/lrm/bin/ng"
+let vimclojure#WantNailgun   = 1
+let vimclojure#SplitPos      = "bottom"
+let vimclojure#SplitSize     = 10
+"see how it works on
+"http://naleid.com/blog/2011/12/19/getting-a-clojure-repl-in-vim-with-vimclojure-nailgun-and-leiningen/
+
