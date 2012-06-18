@@ -48,6 +48,8 @@ let tlist_clojure_settings = 'lisp;f:function'
 let Tlist_Exit_OnlyWindow         = 1
 let Tlist_Close_On_Select         = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
+"shows only the current file on taglist browser
+let Tlist_Show_One_File           = 1
 
 set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
 if has('mac')
