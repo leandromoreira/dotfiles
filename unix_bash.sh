@@ -35,3 +35,6 @@ export PATH=$PATH:"~/bin/"
 #random quote
 fortune
 
+#nailgun server
+export VIMCLOJURE_SERVER_JAR="$HOME/bin/server-2.3.3.jar"
+
