@@ -1,5 +1,6 @@
 alias df='df -h'
 alias ..='cd ..'
+alias be='bundle exec'
 alias gs='git status'
 alias gl="git log --oneline"
 alias pull='git pull'
