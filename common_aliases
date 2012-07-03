@@ -1,7 +1,7 @@
 alias df='df -h'
 alias ..='cd ..'
 alias gs='git status'
-alias gl="git log --oneline"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias pull='git pull'
 alias push='git push'
 alias ll='ls -alF'
