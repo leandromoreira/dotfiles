@@ -3,6 +3,8 @@ syntax on
 let mapleader=","
 set backspace=indent,eol,start 
 set backup 
+set mouse=a
+set clipboard=unnamed
 set backupdir=~/.vim/backup 
 set clipboard+=unnamed 
 set directory=~/.vim/tmp 
