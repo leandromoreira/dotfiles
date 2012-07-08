@@ -42,7 +42,7 @@ endif
 
 map <C-t> <Esc>:CommandT<CR>
 map <C-o> <Esc>:TlistToggle<CR>
-map <C-B> <Esc>:CommandTBuffer<CR>
+"map <C-B> <Esc>:CommandTBuffer<CR>
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
