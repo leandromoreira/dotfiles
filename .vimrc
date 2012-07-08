@@ -13,7 +13,7 @@ set hidden
 set noerrorbells 
 set wildmenu 
 set incsearch 
-set nohlsearch 
+set hlsearch 
 set number 
 set showcmd 
 set cursorline
