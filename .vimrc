@@ -54,7 +54,7 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 "shows only the current file on taglist browser
 let Tlist_Show_One_File           = 1
 
-set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage
+set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp
 if has('mac')
   set guifont=Monaco:h12  
 else
