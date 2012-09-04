@@ -11,3 +11,4 @@ TODO
  change logic to .bashrc instead of .bash_profile
  modify install to backup old config
  create uninstall to get back the old config
+ change CommandT to CtrlP (no need for compile with specif ruby version)
