@@ -41,10 +41,10 @@ git submodule update
 os=`uname`
 
 if [[ "$os" == 'Linux' ]]; then
-  . ~/dotfiles/linux_aliases
+  source ~/dotfiles/linux_aliases
 elif [[ "$os" == 'Darwin' ]]; then
-  . ~/dotfiles/mac_aliases
+  source ~/dotfiles/mac_aliases
   export CLICOLOR=1
 fi
-. ~/dotfiles/common_aliases
-. ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
+source ~/dotfiles/common_aliases
+source ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
