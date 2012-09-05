@@ -5,7 +5,7 @@ create_file_backup(){
 }
 
 create_dir_backup(){
-  mv -r $1 $1$sufix
+  mv $1 $1$sufix
 }
 
 if [ ! -f ~/.vimrc ];
