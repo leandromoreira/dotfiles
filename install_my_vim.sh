@@ -34,6 +34,7 @@ then
   mkdir ~/dotfiles/.vim/backup
 fi
 
+cd ~/dotfiles
 git submodule init
 git submodule update
 
