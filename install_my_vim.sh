@@ -1,3 +1,4 @@
+env GIT_SSL_NO_VERIFY=true
 sufix=".old99l"
 
 create_file_backup(){
