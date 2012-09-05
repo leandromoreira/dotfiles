@@ -30,7 +30,17 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on 
-colorscheme solarized
+
+try
+  colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+  try
+    colorscheme desert
+  catch /^Vim\%((\a\+)\)\=:E185/
+    "okay its up to you chose your own color :P
+  endtry
+endtry
+
 set background=dark
 
 "adjust command t cancel
