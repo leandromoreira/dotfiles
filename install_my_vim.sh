@@ -8,21 +8,24 @@ create_file_backup(){
 create_dir_backup(){
   mv $1 $1$sufix
 }
-
-if [ ! -f ~/.vimrc ];
-then
-  ln -s ~/dotfiles/.vimrc ~/.vimrc
-else
-  create_file_backup ~/.vimrc
-  ln -s ~/dotfiles/.vimrc ~/.vimrc
+if [ ! -f ~/.vimrc$sufix ];
+  if [ ! -f ~/.vimrc ];
+  then
+    ln -s ~/dotfiles/.vimrc ~/.vimrc
+  else
+    create_file_backup ~/.vimrc
+    ln -s ~/dotfiles/.vimrc ~/.vimrc
+  fi
 fi
 
-if [ ! -d ~/.vim ];
-then
-  ln -s ~/dotfiles/.vim ~/.vim
-else
-  create_dir_backup ~/.vim
-  ln -s ~/dotfiles/.vim ~/.vim
+if [ ! -d ~/.vim$sufix ];
+  if [ ! -d ~/.vim ];
+  then
+    ln -s ~/dotfiles/.vim ~/.vim
+  else
+    create_dir_backup ~/.vim
+    ln -s ~/dotfiles/.vim ~/.vim
+  fi
 fi
 
 if [ ! -d ~/dotfiles/.vim/tmp ];
