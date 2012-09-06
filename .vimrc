@@ -66,9 +66,7 @@ let Tlist_Show_One_File           = 1
 
 set wildignore+=public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp
 if has('mac')
-  set guifont=Monaco:h12  
-else
-  colorscheme desert
+  set guifont=Monaco:h12
 endif
 
 let g:vimclojure#HighlightBuiltins = 1
@@ -81,4 +79,3 @@ let vimclojure#WantNailgun   = 1
 let vimclojure#SplitPos      = "bottom"
 let vimclojure#SplitSize     = 10
 "see how it works on
-
