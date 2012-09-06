@@ -9,6 +9,7 @@ create_dir_backup(){
   mv $1 $1$sufix
 }
 if [ ! -f ~/.vimrc$sufix ];
+then
   if [ ! -f ~/.vimrc ];
   then
     ln -s ~/dotfiles/.vimrc ~/.vimrc
@@ -19,6 +20,7 @@ if [ ! -f ~/.vimrc$sufix ];
 fi
 
 if [ ! -d ~/.vim$sufix ];
+then
   if [ ! -d ~/.vim ];
   then
     ln -s ~/dotfiles/.vim ~/.vim
