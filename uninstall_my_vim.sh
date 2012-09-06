@@ -19,7 +19,4 @@ then
   rm -rf ~/.vim
   create_dir_backup ~/.vim
 fi
-
-echo 'Bye, bye (press any key to logout from this session)'
-read
-exit
+echo "Done!"
