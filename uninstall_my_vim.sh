@@ -1,3 +1,4 @@
+#!/bin/bash
 sufix=".old99l"
 
 create_file_backup(){
