@@ -50,5 +50,3 @@ fi
 echo ". ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
 . ~/.bash_profile
 
-echo '#now remember to install command t'
-
