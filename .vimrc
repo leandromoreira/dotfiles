@@ -4,9 +4,8 @@ let mapleader=","
 set backspace=indent,eol,start 
 set backup 
 set mouse=a
-set clipboard=unnamed
-set backupdir=~/.vim/backup 
 set clipboard+=unnamed 
+set backupdir=~/.vim/backup 
 set directory=~/.vim/tmp 
 set fileformats=unix,dos,mac 
 set hidden 
@@ -43,16 +42,7 @@ endtry
 
 set background=dark
 
-"adjust command t cancel
-if ! has('gui_running')
-  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
-  let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
-  let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
-endif
-
-map <C-t> <Esc>:CommandT<CR>
 map <C-o> <Esc>:TlistToggle<CR>
-"map <C-B> <Esc>:CommandTBuffer<CR>
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
