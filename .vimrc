@@ -31,6 +31,23 @@ call vundle#rc()
 " let Vundle manage Vundle
 "  " required! 
 Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml.git'
+Bundle 'kchmck/vim-coffee-script.git'
+Bundle 'pangloss/vim-javascript.git'
+Bundle 'three/html5.vim'
+Bundle 'tsaleh/vim-align'
+Bundle 'garbas/vim-snipmate'
+Bundle 'tomtom/tlib_vim.git'
+Bundle 'MarcWeber/vim-addon-mw-utils.git'
+Bundle 'honza/snipmate-snippets.git'
+Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'tpope/vim-fugitive.git'
+Bundle 'tpope/vim-surround.git'
+Bundle 'Townk/vim-autoclose.git'
+Bundle 'kien/ctrlp.vim.git'
 
 filetype plugin indent on 
 
