@@ -28,15 +28,14 @@ filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-" let Vundle manage Vundle
-"  " required! 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-rails'
+Bundle 'vim-scripts/VimClojure.git'
 Bundle 'tpope/vim-haml.git'
 Bundle 'kchmck/vim-coffee-script.git'
 Bundle 'pangloss/vim-javascript.git'
-Bundle 'three/html5.vim'
+Bundle 'othree/html5.vim'
 Bundle 'tsaleh/vim-align'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim.git'
