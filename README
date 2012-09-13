@@ -5,6 +5,8 @@ I have only tested this on ubuntu 12.04 and Mac OS 10.7.4.
 Make sure you have:
   * installed the brew.sh or apt-get.sh first
 
+To install a new plugin use Vundler and launch vim, run :BundleInstall
+
 TODO
  remove all the .files and maybe put them on proper folder
  change logic to .bashrc instead of .bash_profile
