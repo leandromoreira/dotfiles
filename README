@@ -10,5 +10,3 @@ To install a new plugin use Vundler and launch vim, run :BundleInstall
 TODO
  remove all the .files and maybe put them on proper folder
  change logic to .bashrc instead of .bash_profile
- change CommandT to CtrlP (no need for compile with specif ruby version)
- change from pathogen to vundler
