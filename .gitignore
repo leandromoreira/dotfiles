@@ -6,3 +6,4 @@
 .vim/.netrwhist
 !.vim/backup/.gitkeep
 !.vim/tmp/.gitkeep
+!.vim/bundle/vundle
