@@ -4,4 +4,5 @@
 .vim/.vim
 .vim/bundle/*
 .vim/.netrwhist
-
+!.vim/backup/.gitkeep
+!.vim/tmp/.gitkeep
