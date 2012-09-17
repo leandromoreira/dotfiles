@@ -65,6 +65,8 @@ set background=dark
 map <C-o> <Esc>:TlistToggle<CR>
 "Keeping the control + t as file searcher 'til my fingers get used to CtrlP
 map <C-t> <Esc>:CtrlP<CR>
+"Matching files showing above
+let g:ctrlp_match_window_reversed = 0
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
