@@ -1,3 +1,6 @@
 [submodule "vundle"]
 	path = vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "dev-bash-git-ps1"]
+	path = dev-bash-git-ps1
+	url = https://github.com/xtrementl/dev-bash-git-ps1.git
