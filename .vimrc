@@ -60,6 +60,10 @@ catch /^Vim\%((\a\+)\)\=:E185/
   endtry
 endtry
 
+if !has('mac')
+  colorscheme desert
+endif
+
 set background=dark
 
 map <C-o> <Esc>:TlistToggle<CR>
