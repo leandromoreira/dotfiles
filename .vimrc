@@ -61,7 +61,11 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
 if !has('mac')
-  colorscheme desert
+  try
+    colorscheme desert
+  catch /^Vim\%((\a\+)\)\=:E185/
+    "okay its up to you chose your own color :P
+  endtry
 endif
 
 set background=dark
