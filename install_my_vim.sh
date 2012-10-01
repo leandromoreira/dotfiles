@@ -50,3 +50,4 @@ git submodule init
 git submodule update
 
 source ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
+vim +BundleInstall +qall
