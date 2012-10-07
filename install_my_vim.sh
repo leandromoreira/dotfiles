@@ -18,6 +18,8 @@ then
     create_file_backup ~/.vimrc
     ln -s ~/dotfiles/.vimrc ~/.vimrc
   fi
+else
+  ln -s ~/dotfiles/.vimrc ~/.vimrc
 fi
 
 if [ ! -d ~/.vim$sufix ];
@@ -29,16 +31,8 @@ then
     create_dir_backup ~/.vim
     ln -s ~/dotfiles/.vim ~/.vim
   fi
-fi
-
-if [ ! -d ~/dotfiles/.vim/tmp ];
-then
-  mkdir ~/dotfiles/.vim/tmp
-fi
-
-if [ ! -d ~/dotfiles/.vim/backup ];
-then
-  mkdir ~/dotfiles/.vim/backup
+else
+  ln -s ~/dotfiles/.vim ~/.vim
 fi
 
 os=`uname`
@@ -56,3 +50,4 @@ git submodule init
 git submodule update
 
 source ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
+vim +BundleInstall +qall

@@ -1,11 +1,10 @@
 My config files for some *unix env.
 
-I have only tested this on ubuntu 12.04 and Mac OS 10.7.4.
+I have only tested this on ubuntu 12.04 and Mac OS 10.7.4 and 10.8.2
 
 Make sure you have:
-  * installed the brew.sh or apt-get.sh first
-
-To install a new plugin use Vundler and launch vim, run :BundleInstall
+  * for mac: homebrew
+  * installed brew.sh or apt-get.sh
 
 TODO
  remove all the .files and maybe put them on proper folder

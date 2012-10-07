@@ -62,7 +62,11 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
 if !has('mac')
-  colorscheme desert
+  try
+    colorscheme desert
+  catch /^Vim\%((\a\+)\)\=:E185/
+    "okay its up to you chose your own color :P
+  endtry
 endif
 
 set background=dark
@@ -75,6 +79,7 @@ let g:ctrlp_match_window_reversed = 0
 "Change the default behavior for new tab with file thanks to
 "https://github.com/kien/ctrlp.vim/issues/289
 let g:ctrlp_working_path_mode     = 0
+let g:ctrlp_dotfiles              = 0
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
