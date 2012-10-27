@@ -38,3 +38,6 @@ fortune
 #nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/bin/server-2.3.3.jar"
 
+#increase the history size
+export HISTSIZE=2000
+export HISTFILESIZE=2000
