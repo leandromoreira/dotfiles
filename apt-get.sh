@@ -8,7 +8,7 @@ sudo apt-get install oracle-jdk7-installer
 #general tools
 sudo apt-get install git subversion
 sudo apt-get install vim-nox exuberant-ctags 
-sudo apt-get install ack-grep xclip curl build-essential openssl libpq-dev 
+sudo apt-get install ack-grep xclip curl build-essential openssl libpq-dev libcurl4-openssl-dev
 sudo apt-get install libreadline6 libreadline6-dev curl zlib1g zlib1g-dev 
 sudo apt-get install libssl-dev libyaml-dev libsqlite3-dev sqlite3 
 sudo apt-get install libxml2-dev libxslt-dev autoconf libc6-dev fortune
