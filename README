@@ -1,6 +1,6 @@
 My config files for some *unix env.
 
-I have only tested this on ubuntu 12.04 and Mac OS 10.7.4 and 10.8.2
+I have only tested this on ubuntu 12.04 and 12.10, MacOS 10.7.4 and 10.8.2
 
 Make sure you have:
   * for mac: homebrew
