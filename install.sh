@@ -47,6 +47,6 @@ else
 fi
 
 #linking my aliases, configs, functions to my bash_profile
-echo ". ~/dotfiles/unix_bash.sh" >> ~/.bash_profile
+echo ". ~/dotfiles/unix_bash.sh" >> ~/.bashrc
 . ~/.bash_profile
 vim +BundleInstall +qall
