@@ -106,3 +106,6 @@ let vimclojure#WantNailgun   = 1
 let vimclojure#SplitPos      = "bottom"
 let vimclojure#SplitSize     = 10
 "see how it works on
+
+"Mappings that I use often
+map <F4> :!rspec %:p -fd --color<CR>
