@@ -1,29 +1,29 @@
-set nocompatible 
-syntax on 
+set nocompatible
+syntax on
 let mapleader=","
-set backspace=indent,eol,start 
-set backup 
+set backspace=indent,eol,start
+set backup
 set mouse=a
-set clipboard+=unnamed 
-set backupdir=~/.vim/backup 
-set directory=~/.vim/tmp 
-set fileformats=unix,dos,mac 
-set hidden 
-set noerrorbells 
-set wildmenu 
-set incsearch 
-set hlsearch 
-set number 
-set showcmd 
+set clipboard+=unnamed
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+set fileformats=unix,dos,mac
+set hidden
+set noerrorbells
+set wildmenu
+set incsearch
+set hlsearch
+set number
+set showcmd
 set cursorline
-set showmatch 
-set expandtab 
-set ignorecase 
-set nowrap 
-set shiftround 
-set smartcase 
-set shiftwidth=2 
-set softtabstop=2 
+set showmatch
+set expandtab
+set ignorecase
+set nowrap
+set shiftround
+set smartcase
+set shiftwidth=2
+set softtabstop=2
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -49,7 +49,7 @@ Bundle 'tpope/vim-surround.git'
 Bundle 'Townk/vim-autoclose.git'
 Bundle 'kien/ctrlp.vim.git'
 
-filetype plugin indent on 
+filetype plugin indent on
 
 try
   colorscheme solarized
@@ -109,3 +109,12 @@ let vimclojure#SplitSize     = 10
 
 "Mappings that I use often
 map <F4> :!rspec %:p --color<CR>
+
+"Shows extra trailing white space
+"stealed from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
