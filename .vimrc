@@ -108,7 +108,7 @@ let vimclojure#SplitSize     = 10
 "see how it works on
 
 "Mappings that I use often
-map <F4> :!rspec %:p --color<CR>
+map <F4> :!bundle exec rspec %:p --color<CR>
 
 "Shows extra trailing white space
 "stealed from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
