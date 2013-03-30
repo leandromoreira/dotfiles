@@ -12,6 +12,11 @@ if [ ! -f ~/.vimrc ];
 then
   ln -s ~/dotfiles/.vimrc ~/.vimrc
 fi
+#tmux config
+if [ ! -f ~/.tmux.conf ];
+then
+  ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+fi
 
 if [ ! -d ~/.vim ];
 then
