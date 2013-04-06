@@ -74,6 +74,10 @@ set background=dark
 map <C-o> <Esc>:TlistToggle<CR>
 "Keeping the control + t as file searcher 'til my fingers get used to CtrlP
 map <C-t> <Esc>:CtrlP<CR>
+"Since I'd never remembered buffers commands at least here I can buffer list
+"all and better using ctrl+shift+b ;)
+map <C-B> <Esc>:CtrlPBuffer<CR>
+
 "Matching files showing above
 let g:ctrlp_match_window_reversed = 0
 "Change the default behavior for new tab with file thanks to
