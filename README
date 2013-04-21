@@ -8,5 +8,6 @@ Make sure you have:
   * installed brew.sh or apt-get.sh
 
 TODO
+ ADD PROVISION BY USING chef :>
  remove all the .files and maybe put them on proper folder
  change logic to .bashrc instead of .bash_profile
