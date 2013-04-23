@@ -27,6 +27,7 @@ export ZSH_THEME="obraun"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/dotfiles/common_aliases
 
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
