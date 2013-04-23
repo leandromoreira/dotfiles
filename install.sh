@@ -17,6 +17,11 @@ if [ ! -f ~/.tmux.conf ];
 then
   ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 fi
+#zsh config
+if [ ! -f ~/.zshrc ];
+then
+  ln -s ~/dotfiles/.zshrc ~/.zshrc
+fi
 
 if [ ! -d ~/.vim ];
 then
