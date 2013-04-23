@@ -84,6 +84,7 @@ let g:ctrlp_match_window_reversed = 0
 "https://github.com/kien/ctrlp.vim/issues/289
 let g:ctrlp_working_path_mode     = 0
 let g:ctrlp_dotfiles              = 0
+let g:ctrlp_show_hidden           = 1
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
