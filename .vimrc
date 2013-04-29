@@ -71,6 +71,15 @@ endif
 
 set background=dark
 
+"handling split of windows I stole this from
+"http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
 map <C-o> <Esc>:TlistToggle<CR>
 "Keeping the control + t as file searcher 'til my fingers get used to CtrlP
 map <C-t> <Esc>:CtrlP<CR>
