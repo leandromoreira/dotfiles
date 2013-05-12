@@ -3,7 +3,7 @@ alias ..='cd ..'
 alias be='bundle exec'
 alias gs='git status'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias pull='git pull'
+alias pull='git pull --rebase'
 alias push='git push'
 alias ll='ls -alF'
 alias la='ls -A'

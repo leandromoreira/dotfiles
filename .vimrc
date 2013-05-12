@@ -41,6 +41,7 @@ Bundle 'tsaleh/vim-align'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
+Bundle 'honza/vim-snippets.git'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'tpope/vim-fugitive.git'
@@ -70,6 +71,15 @@ endif
 
 set background=dark
 
+"handling split of windows I stole this from
+"http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
 map <C-o> <Esc>:TlistToggle<CR>
 "Keeping the control + t as file searcher 'til my fingers get used to CtrlP
 map <C-t> <Esc>:CtrlP<CR>
@@ -83,6 +93,7 @@ let g:ctrlp_match_window_reversed = 0
 "https://github.com/kien/ctrlp.vim/issues/289
 let g:ctrlp_working_path_mode     = 0
 let g:ctrlp_dotfiles              = 0
+let g:ctrlp_show_hidden           = 1
 
 "make taglist available for Clojure
 let tlist_clojure_settings = 'lisp;f:function'
