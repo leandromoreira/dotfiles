@@ -29,6 +29,14 @@ plugins=(git rails3 ruby)
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/common_aliases
 
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]]; then
+    source "$HOME/.hitch_export_authors"
+  fi
+}
+alias unhitch='hitch -u'
+
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 eval "$(rbenv init -)"
