@@ -36,6 +36,7 @@ hitch() {
   fi
 }
 alias unhitch='hitch -u'
+alias t='py.test -vs'
 
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
