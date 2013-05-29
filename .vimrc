@@ -24,6 +24,7 @@ set shiftround
 set smartcase
 set shiftwidth=2
 set softtabstop=2
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -50,6 +51,7 @@ Bundle 'tpope/vim-surround.git'
 Bundle 'Townk/vim-autoclose.git'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'vim-scripts/python.vim--Vasiliev'
+Bundle 'rodjek/vim-puppet.git'
 
 filetype plugin indent on
 
