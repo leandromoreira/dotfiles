@@ -52,6 +52,7 @@ Bundle 'Townk/vim-autoclose.git'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'vim-scripts/python.vim--Vasiliev'
 Bundle 'rodjek/vim-puppet.git'
+Bundle 'vim-scripts/nginx.vim.git'
 
 filetype plugin indent on
 
