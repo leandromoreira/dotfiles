@@ -24,6 +24,7 @@ set shiftround
 set smartcase
 set shiftwidth=2
 set softtabstop=2
+au BufNewFile,BufRead *.conf set filetype=conf
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 filetype off
 
