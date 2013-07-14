@@ -54,6 +54,7 @@ Bundle 'kien/ctrlp.vim.git'
 Bundle 'vim-scripts/python.vim--Vasiliev'
 Bundle 'rodjek/vim-puppet.git'
 Bundle 'vim-scripts/nginx.vim.git'
+Bundle 'othree/javascript-libraries-syntax.vim'
 
 filetype plugin indent on
 
