@@ -58,6 +58,7 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'claco/jasmine.vim'
 Bundle 'vim-scripts/tornadotmpl.vim'
 Bundle 'mklabs/grunt.vim'
+Bundle 'hail2u/vim-css3-syntax'
 
 filetype plugin indent on
 
