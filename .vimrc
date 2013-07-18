@@ -59,6 +59,7 @@ Bundle 'claco/jasmine.vim'
 Bundle 'vim-scripts/tornadotmpl.vim'
 Bundle 'mklabs/grunt.vim'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'kevinw/pyflakes-vim'
 
 filetype plugin indent on
 
