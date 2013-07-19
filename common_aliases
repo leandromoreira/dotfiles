@@ -10,4 +10,5 @@ alias la='ls -A'
 alias fp='ps aux | grep $1'
 alias l='ls -CF'
 alias grep='grep --color=auto'
+alias fp='ps aux | grep $1'
 
