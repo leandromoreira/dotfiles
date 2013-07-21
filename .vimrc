@@ -60,6 +60,7 @@ Bundle 'vim-scripts/tornadotmpl.vim'
 Bundle 'mklabs/grunt.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kevinw/pyflakes-vim'
+Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on
 
