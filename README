@@ -1,6 +1,6 @@
 My config files for some *unix env.
 
-I have only tested this on ubuntu 12.04 and 12.10, MacOS 10.7.4 and 10.8.2
+I have only tested this on ubuntu 12.04, 12.10 and 13.04, MacOS 10.7.4, 10.8.2 and 10.8.4
 
 Make sure you have:
   * change .gitconfig file for your user and email
@@ -8,6 +8,5 @@ Make sure you have:
   * installed brew.sh or apt-get.sh
 
 TODO
- ADD PROVISION BY USING chef :>
  remove all the .files and maybe put them on proper folder
  change logic to .bashrc instead of .bash_profile
