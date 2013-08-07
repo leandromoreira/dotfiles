@@ -61,6 +61,7 @@ Bundle 'mklabs/grunt.vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'walm/jshint.vim'
 
 filetype plugin indent on
 
