@@ -47,4 +47,4 @@ if [ `uname` = "Darwin" ]; then
   source ~/dotfiles/mac_aliases
 elif [ `uname -o` = "GNU/Linux" ]; then
   source ~/dotfiles/linux_aliases
-else
+fi
