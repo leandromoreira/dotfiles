@@ -59,7 +59,4 @@ fi
 #installing oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
-#linking my aliases, configs, functions to my bash_profile
-echo ". ~/dotfiles/unix_bash.sh" >> ~/.bashrc
-. ~/.bashrc
 vim +BundleInstall +qall

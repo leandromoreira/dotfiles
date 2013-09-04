@@ -29,6 +29,25 @@ plugins=(git rails3 ruby)
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/common_aliases
 
+take()
+{
+  mkdir $1
+  cd $1
+}
+
+#export
+export PATH=$PATH:"~/bin/"
+
+#random quote
+fortune
+
+#nailgun server
+export VIMCLOJURE_SERVER_JAR="$HOME/bin/server-2.3.3.jar"
+
+#increase the history size
+export HISTSIZE=2000
+export HISTFILESIZE=2000
+
 hitch() {
   command hitch "$@"
   if [[ -s "$HOME/.hitch_export_authors" ]]; then
