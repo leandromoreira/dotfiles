@@ -1,11 +1,7 @@
 #!/bin/bash
-
-#java from oracle
-sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install -y oracle-jdk7-installer
 
-#general tools
+sudo apt-get install -y openjdk-7-jdk
 sudo apt-get install -y git subversion
 sudo apt-get install -y vim-nox exuberant-ctags
 sudo apt-get install -y tmux
