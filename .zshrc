@@ -42,3 +42,9 @@ alias t='py.test -vs'
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 export PATH=/usr/local/share/npm/bin:$PATH
+
+if [ `uname` = "Darwin" ]; then
+  source ~/dotfiles/mac_aliases
+elif [ `uname -o` = "GNU/Linux" ]; then
+  source ~/dotfiles/linux_aliases
+else
