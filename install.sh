@@ -7,9 +7,6 @@ elif [[ "$os" == 'Darwin' ]]; then
   . ~/dotfiles/brew.sh
 fi
 
-#install OH M ZSHELL
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
 #vim config file
 if [ ! -f ~/.vimrc ];
 then
