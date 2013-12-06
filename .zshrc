@@ -45,8 +45,8 @@ fortune
 export VIMCLOJURE_SERVER_JAR="$HOME/bin/server-2.3.3.jar"
 
 #increase the history size
-export HISTSIZE=2000
-export HISTFILESIZE=2000
+export HISTSIZE=20000
+export HISTFILESIZE=20000
 
 hitch() {
   command hitch "$@"
