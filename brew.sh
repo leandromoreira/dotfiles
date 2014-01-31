@@ -7,4 +7,5 @@ brew install fortune
 brew install htop
 brew install wget
 brew install ack
+brew install leiningen
 

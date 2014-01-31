@@ -14,4 +14,5 @@ sudo apt-get install -y ncurses-dev automake libtool bison gyp tree htop
 sudo apt-get install -y apache2-utils httperf
 sudo apt-get install -y rhino
 sudo apt-get install -y nodejs
+sudo apt-get install -y leiningen
 

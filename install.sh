@@ -48,14 +48,6 @@ fi
 git submodule init
 git submodule update
 
-#general bin
-if [ ! -d ~/bin ];
-then
-  ln -s ~/dotfiles/bin/ ~/bin
-else
-  cp -r ~/dotfiles/bin/ ~/bin
-fi
-
 #installing oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
