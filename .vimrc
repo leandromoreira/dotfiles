@@ -65,24 +65,7 @@ Bundle 'walm/jshint.vim'
 
 filetype plugin indent on
 
-try
-  colorscheme solarized
-catch /^Vim\%((\a\+)\)\=:E185/
-  try
-    colorscheme desert
-  catch /^Vim\%((\a\+)\)\=:E185/
-    "okay its up to you chose your own color :P
-  endtry
-endtry
-
-if !has('mac')
-  try
-    colorscheme desert
-  catch /^Vim\%((\a\+)\)\=:E185/
-    "okay its up to you chose your own color :P
-  endtry
-endif
-
+colorscheme desert
 set background=dark
 
 "handling split of windows I stole this from
@@ -121,7 +104,7 @@ let Tlist_Show_One_File           = 1
 
 set wildignore+=*/node_modules/*,public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp,*.pyc
 if has('mac')
-  set guifont=Monaco:h12
+  set guifont=Monaco:h13
 endif
 
 let g:vimclojure#HighlightBuiltins = 1
