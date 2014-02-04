@@ -56,7 +56,7 @@ alias t='py.test -vs'
 
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 export PATH=/usr/local/share/npm/bin:$PATH
 
 if [ `uname` = "Darwin" ]; then
