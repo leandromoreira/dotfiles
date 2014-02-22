@@ -15,3 +15,5 @@
 [core]
 	editor = vim
 	excludesfile = /home/lrm/dotfiles/.global_ignore
+[push]
+	default = simple
