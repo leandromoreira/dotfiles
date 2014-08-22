@@ -64,3 +64,6 @@ if [ `uname` = "Darwin" ]; then
 elif [ `uname -o` = "GNU/Linux" ]; then
   source ~/dotfiles/linux_aliases
 fi
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
