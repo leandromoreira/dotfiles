@@ -9,6 +9,7 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set fileformats=unix,dos,mac
 set hidden
+set re=1
 set noerrorbells
 set wildmenu
 set incsearch
@@ -35,6 +36,8 @@ Bundle 'jamestomasino/actionscript-vim-bundle'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/VimClojure.git'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-haml.git'
 Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script.git'
@@ -63,6 +66,7 @@ Bundle 'kevinw/pyflakes-vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'walm/jshint.vim'
 Bundle 'takac/vim-hardtime'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 
@@ -110,14 +114,6 @@ endif
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow      = 1
-
-"http://naleid.com/blog/2011/12/19/getting-a-clojure-repl-in-vim-with-vimclojure-nailgun-and-leiningen/
-"needed for repl in the same window
-"let vimclojure#NailgunClient = "/home/lrm/bin/ng"
-let vimclojure#WantNailgun   = 1
-let vimclojure#SplitPos      = "bottom"
-let vimclojure#SplitSize     = 10
-"see how it works on
 
 "Mappings that I use often
 map <F4> :!rspec %:p --color -fd<CR>
