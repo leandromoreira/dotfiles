@@ -65,12 +65,15 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'walm/jshint.vim'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'takac/vim-hardtime'
 Bundle 'bling/vim-airline'
+Bundle 'ekalinin/Dockerfile.vim'
 
 filetype plugin indent on
 
-colorscheme desert
+set shortmess+=A
+colorscheme solarized
 set background=dark
 
 "handling split of windows I stole this from
