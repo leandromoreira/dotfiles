@@ -31,6 +31,7 @@ filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'fatih/vim-go'
 Bundle 'gmarik/vundle'
 Bundle 'jamestomasino/actionscript-vim-bundle'
 Bundle 'scrooloose/nerdtree.git'
