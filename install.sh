@@ -26,6 +26,7 @@ fi
 if [ ! -d ~/.vim ];
 then
   ln -s ~/dotfiles/.vim ~/.vim
+  ln -s ~/dotfiles/bundle ~/.vim/bundle
 fi
 
 if [ ! -d ~/dotfiles/.vim/tmp ];

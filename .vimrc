@@ -9,7 +9,6 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set fileformats=unix,dos,mac
 set hidden
-set re=1
 set noerrorbells
 set wildmenu
 set incsearch
@@ -29,47 +28,47 @@ au BufNewFile,BufRead *.conf set filetype=conf
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'fatih/vim-go'
-Bundle 'gmarik/vundle'
-Bundle 'jamestomasino/actionscript-vim-bundle'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'tpope/vim-rails'
-Bundle 'vim-scripts/VimClojure.git'
-Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-haml.git'
-Bundle 'slim-template/vim-slim'
-Bundle 'kchmck/vim-coffee-script.git'
-Bundle 'pangloss/vim-javascript.git'
-Bundle 'othree/html5.vim'
-Bundle 'tsaleh/vim-align'
-Bundle 'garbas/vim-snipmate'
-Bundle 'tomtom/tlib_vim.git'
-Bundle 'MarcWeber/vim-addon-mw-utils.git'
-Bundle 'honza/vim-snippets.git'
-Bundle 'altercation/vim-colors-solarized.git'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'tpope/vim-fugitive.git'
-Bundle 'tpope/vim-surround.git'
-Bundle 'Townk/vim-autoclose.git'
-Bundle 'kien/ctrlp.vim.git'
-Bundle 'vim-scripts/python.vim--Vasiliev'
-Bundle 'rodjek/vim-puppet.git'
-Bundle 'vim-scripts/nginx.vim.git'
-Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'claco/jasmine.vim'
-Bundle 'vim-scripts/tornadotmpl.vim'
-Bundle 'mklabs/grunt.vim'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'kevinw/pyflakes-vim'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'walm/jshint.vim'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'takac/vim-hardtime'
-Bundle 'bling/vim-airline'
-Bundle 'ekalinin/Dockerfile.vim'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'fatih/vim-go'
+Plugin 'jamestomasino/actionscript-vim-bundle'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-scripts/VimClojure.git'
+Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-haml.git'
+Plugin 'slim-template/vim-slim'
+Plugin 'kchmck/vim-coffee-script.git'
+Plugin 'pangloss/vim-javascript.git'
+Plugin 'othree/html5.vim'
+Plugin 'tsaleh/vim-align'
+Plugin 'garbas/vim-snipmate'
+Plugin 'tomtom/tlib_vim.git'
+Plugin 'MarcWeber/vim-addon-mw-utils.git'
+Plugin 'honza/vim-snippets.git'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'tpope/vim-fugitive.git'
+Plugin 'tpope/vim-surround.git'
+Plugin 'Townk/vim-autoclose.git'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'vim-scripts/python.vim--Vasiliev'
+Plugin 'rodjek/vim-puppet.git'
+Plugin 'vim-scripts/nginx.vim.git'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'claco/jasmine.vim'
+Plugin 'vim-scripts/tornadotmpl.vim'
+Plugin 'mklabs/grunt.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'kevinw/pyflakes-vim'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'walm/jshint.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'takac/vim-hardtime'
+Plugin 'bling/vim-airline'
+Plugin 'ekalinin/Dockerfile.vim'
+call vundle#end()
 
 filetype plugin indent on
 
@@ -111,10 +110,11 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 "shows only the current file on taglist browser
 let Tlist_Show_One_File           = 1
 
-set wildignore+=*/node_modules/*,public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp,*.pyc
+set wildignore+=*/build/*,*/node_modules/*,public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp,*.pyc
 if has('mac')
   set guifont=Monaco:h13
 endif
+let g:airline_powerline_fonts = 1
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow      = 1
