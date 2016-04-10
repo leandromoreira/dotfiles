@@ -35,7 +35,6 @@ Plugin 'fatih/vim-go'
 Plugin 'jamestomasino/actionscript-vim-bundle'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-rails'
-Plugin 'vim-scripts/VimClojure.git'
 Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-haml.git'
@@ -100,9 +99,6 @@ let g:ctrlp_working_path_mode     = 0
 let g:ctrlp_dotfiles              = 0
 let g:ctrlp_show_hidden           = 1
 
-"make taglist available for Clojure
-let tlist_clojure_settings = 'lisp;f:function'
-
 "close taglist window when you close the last work window
 let Tlist_Exit_OnlyWindow         = 1
 let Tlist_Close_On_Select         = 1
@@ -115,9 +111,6 @@ if has('mac')
   set guifont=Monaco:h13
 endif
 let g:airline_powerline_fonts = 1
-
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow      = 1
 
 "Mappings that I use often
 map <F4> :!rspec %:p --color -fd<CR>
