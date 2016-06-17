@@ -45,9 +45,7 @@ then
   ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 fi
 
-#git update submodules
-git submodule init
-git submodule update
+git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
 
 #installing oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh

@@ -44,10 +44,3 @@ elif [[ "$os" == 'Darwin' ]]; then
   export CLICOLOR=1
 fi
 source ~/dotfiles/common_aliases
-
-cd ~/dotfiles
-git submodule init
-git submodule update
-
-source ~/dotfiles/dev-bash-git-ps1/bash_git_ps1.sh
-vim +BundleInstall +qall

@@ -28,7 +28,7 @@ au BufNewFile,BufRead *.conf set filetype=conf
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
@@ -73,7 +73,6 @@ call vundle#end()
 filetype plugin indent on
 
 set shortmess+=A
-colorscheme solarized
 set background=dark
 
 "handling split of windows I stole this from
