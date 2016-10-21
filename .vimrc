@@ -68,6 +68,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
 Plugin 'bling/vim-airline'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'mhinz/vim-startify'
 call vundle#end()
 
 filetype plugin indent on
