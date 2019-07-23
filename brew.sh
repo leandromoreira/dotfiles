@@ -7,4 +7,5 @@ brew install wget
 brew install ack
 brew install mackup
 brew install fzf
+$(brew --prefix)/opt/fzf/install
 
