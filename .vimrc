@@ -69,6 +69,11 @@ Plugin 'takac/vim-hardtime'
 Plugin 'bling/vim-airline'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'mhinz/vim-startify'
+Bundle 'LucHermitte/lh-vim-lib'
+Bundle 'LucHermitte/lh-tags'
+Bundle 'LucHermitte/lh-dev'
+Bundle 'LucHermitte/lh-brackets'
+Bundle 'LucHermitte/vim-refactor'
 call vundle#end()
 
 filetype plugin indent on
