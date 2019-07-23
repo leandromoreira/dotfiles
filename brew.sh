@@ -6,4 +6,5 @@ brew install htop
 brew install wget
 brew install ack
 brew install mackup
+brew install fzf
 
