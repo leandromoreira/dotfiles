@@ -72,3 +72,7 @@ export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+#source <(kubectl completion zsh)
+#alias k=kubectl
+#complete -F __start_kubectl k
+#source <(minikube completion zsh)
