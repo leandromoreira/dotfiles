@@ -30,8 +30,9 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'jodosha/vim-godebug'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plugin 'jamestomasino/actionscript-vim-bundle'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-rails'
@@ -62,7 +63,6 @@ Plugin 'vim-scripts/tornadotmpl.vim'
 Plugin 'mklabs/grunt.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kevinw/pyflakes-vim'
-Plugin 'jnwhiteh/vim-golang'
 Plugin 'walm/jshint.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
@@ -104,6 +104,8 @@ let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_working_path_mode     = 0
 let g:ctrlp_dotfiles              = 0
 let g:ctrlp_show_hidden           = 1
+
+let g:go_fmt_command = "goimports"
 
 "close taglist window when you close the last work window
 let Tlist_Exit_OnlyWindow         = 1
