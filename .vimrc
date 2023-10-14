@@ -45,11 +45,11 @@ Plugin 'pangloss/vim-javascript.git'
 Plugin 'othree/html5.vim'
 Plugin 'tsaleh/vim-align'
 Plugin 'mxw/vim-jsx'
-Plugin 'garbas/vim-snipmate'
+" Plugin 'garbas/vim-snipmate'
 Plugin 'tomtom/tlib_vim.git'
 Plugin 'MarcWeber/vim-addon-mw-utils.git'
 Plugin 'honza/vim-snippets.git'
-Plugin 'vim-scripts/taglist.vim'
+" Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-surround.git'
 Plugin 'Townk/vim-autoclose.git'
@@ -62,13 +62,13 @@ Plugin 'claco/jasmine.vim'
 Plugin 'vim-scripts/tornadotmpl.vim'
 Plugin 'mklabs/grunt.vim'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'kevinw/pyflakes-vim'
 Plugin 'walm/jshint.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'takac/vim-hardtime'
 Plugin 'bling/vim-airline'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'ludovicchabant/vim-gutentags'
 "Bundle 'LucHermitte/lh-vim-lib'
 "Bundle 'LucHermitte/lh-tags'
 "Bundle 'LucHermitte/lh-dev'
@@ -106,13 +106,7 @@ let g:ctrlp_dotfiles              = 0
 let g:ctrlp_show_hidden           = 1
 
 let g:go_fmt_command = "goimports"
-
-"close taglist window when you close the last work window
-let Tlist_Exit_OnlyWindow         = 1
-let Tlist_Close_On_Select         = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-"shows only the current file on taglist browser
-let Tlist_Show_One_File           = 1
+set rtp+=/opt/homebrew/opt/fzf
 
 set wildignore+=*/build/*,*/node_modules/*,public/images,*/bundler,*/bundle,*/.bundle,spec/reports,doc,coverage,tmp,*.pyc
 if has('mac')
@@ -124,6 +118,11 @@ let g:airline_powerline_fonts = 1
 map <F4> :!rspec %:p --color -fd<CR>
 map <F3> :!bundle exec rspec %:p --color -fd<CR>
 
+"Ctrl+\ - Open the definition in a new tab
+"Alt+] - Open the definition in a vertical split
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 "Shows extra trailing white space
 "stealed from http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -132,3 +131,4 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
